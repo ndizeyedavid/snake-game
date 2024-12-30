@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <audio id="eatSound" src="assets/sound/score.wav" preload="auto"></audio>
+    <audio id="gameOverSound" src="assets/sound/gameover.wav" preload="auto"></audio>
+    <audio id="backgroundMusic" src="assets/sound/background.wav" preload="auto" autoplay loop></audio>
+
     <div class="game-container">
         <canvas id="gameCanvas"></canvas>
         <div class="score" id="score">Score: 0</div>
@@ -15,4 +21,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
